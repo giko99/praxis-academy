@@ -1,0 +1,164 @@
+(base) giko@giko-HP-Notebook:~$ cd /basic_linux
+bash: cd: /basic_linux: No such file or directory
+(base) giko@giko-HP-Notebook:~$ cd \basic_linux
+(base) giko@giko-HP-Notebook:~/basic_linux$ cat > cmdline.txt
+(base) giko@giko-HP-Notebook:~/basic_linux$ ls
+cmdline.txt  env.txt  grub.txt  kernel-linux.txt
+(base) giko@giko-HP-Notebook:~/basic_linux$ ls-R
+ls-R: command not found
+(base) giko@giko-HP-Notebook:~/basic_linux$ ls -R
+.:
+cmdline.txt  cmdline.txt~  env.txt  grub.txt  kernel-linux.txt
+(base) giko@giko-HP-Notebook:~/basic_linux$ cat > basiclinux
+perintah ke 1
+
+(base) giko@giko-HP-Notebook:~/basic_linux$ cat basiclinux
+perintah ke 1
+
+(base) giko@giko-HP-Notebook:~/basic_linux$ cat > basiclinux2
+(base) giko@giko-HP-Notebook:~/basic_linux$ cat basiclinux basiclinux2 > basiclinux1(base) giko@giko-HP-Notebook:~/basic_linux$ ls
+basiclinux   basiclinux2  cmdline.txt~  grub.txt
+basiclinux1  cmdline.txt  env.txt       kernel-linux.txt
+(base) giko@giko-HP-Notebook:~/basic_linux$ rm basiclinux1
+(base) giko@giko-HP-Notebook:~/basic_linux$ ls
+basiclinux   cmdline.txt   env.txt   kernel-linux.txt
+basiclinux2  cmdline.txt~  grub.txt
+(base) giko@giko-HP-Notebook:~/basic_linux$ mv basiclinux2/home
+mv: missing destination file operand after 'basiclinux2/home'
+Try 'mv --help' for more information.
+(base) giko@giko-HP-Notebook:~/basic_linux$ mv basiclinux2 /home
+mv: cannot move 'basiclinux2' to '/home/basiclinux2': Permission denied
+(base) giko@giko-HP-Notebook:~/basic_linux$ sudo mv basiclinux2 /home
+[sudo] password for giko:            
+(base) giko@giko-HP-Notebook:~/basic_linux$ pr
+(base) giko@giko-HP-Notebook:~/basic_linux$ history
+    1  cd /Downloads
+    2  cd -/Downloads/
+    3  cd ~/Downloads/
+    4  cd ~/Downloads/installers/
+    5  cd ~/installers/
+    6  ls
+    7  sudo dkpg -i code_1.47.3-1595520028_amd64.deb 
+    8  sudo dkpg -i code_1.47.3-1595520028_amd64.deb
+    9  sudo dpkg -i code_1.47.3-1595520028_amd64.deb
+   10  sudo apt install -f
+   11  code
+   12  cat >sample1
+   13  cat
+   14  cat sample1
+   15  ls
+   16  mv sample1 /home/Documents
+   17  sudo mv sample1 /home/Documents
+   18  ls
+   19  ls -a
+   20  ls -r
+   21  ls -R
+   22  ls -al
+   23  ls -a
+   24  cat sample1
+   25  cat Documents/sample1
+   26  ls -R
+   27  cat >sample1
+   28  ls -R
+   29  cat sample1
+   30  ls
+   31  cat >sample2
+   32  ls
+   33  sudo mv sample2 /home/giko/Documents
+   34  sudo mv sample2 /home/Documents
+   35  is -r
+   36  Is -R
+   37  Is -r
+   38  Is -al
+   39  Is
+   40  bash Miniconda3-latest-Linux-x86_64.sh
+   41  conda install numpy
+   42  echo $PATH
+   43  echo %PATH%
+   44  cat > sample1
+   45  cat sample1
+   46  Is
+   47  ls
+   48  rm sample1
+   49  ls
+   50  man apt
+   51  man
+   52  lib
+   53  is\var\lib
+   54  Is\var\lib
+   55  Is/var/lib
+   56  cd/home
+   57  IS
+   58  Is
+   59  Is R
+   60  Is R-
+   61  bash Miniconda3-lates-lnux-x86_64.sh
+   62  wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   63  chmod +x Miniconda-latest-Linux-x86_64.sh
+   64  ./Miniconda-latest-Linux-x86_64.sh
+   65  echo %PATH%
+   66  conda -V
+   67  sh Miniconda3-lates-lnux-x86_64.sh
+   68  bashh Miniconda3-lates-lnux-x86_64.sh
+   69  bahh Miniconda3-lates-lnux-x86_64.sh
+   70  bah Miniconda3-lates-lnux-x86_64.sh
+   71  bash Miniconda3-lates-lnux-x86_64.sh
+   72  sudo sh Miniconda3-lates-lnux-x86_64.sh
+   73  shsh Miniconda2-latest-Linux-x86_64.sh
+   74  sh Miniconda2-latest-Linux-x86_64.sh
+   75  wget https://repo.anaconda.com/miniconda/Miniconda2-latest-Linux-x86_64.sh
+   76  bash Miniconda3-latest-Linux-x86_64.sh
+   77  conda install numpy
+   78  conda -V
+   79  conda v-
+   80  conda-V
+   81  sudo snap install --classic code # or code-insiders
+   82  sudo snap install --classic code
+   83  sudo apt update
+   84  sudo apt install software-[roperties-common apt-tansport-https wget
+   85  wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+   86  sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+   87  wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+   88  ok
+   89  OK
+   90  udo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+   91  sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+   92  sudo apt update
+   93  sudo apt install code
+   94  sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+   95  wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+   96  sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+   97  sudo snap install --classic code
+   98  cd /Downloads
+   99  cd \Downloads
+  100  cd Home
+  101  cd \Home
+  102  /etc/X11/default-display-manager
+  103  sudo /etc/X11/default-display-manager
+  104  sudo apt-get install gdm3
+  105  uname -r
+  106  uname -a
+  107  cat > kernel-linux.txt
+  108  mkdir basic_linux
+  109  code
+  110  vim
+  111  cd /basic_linux
+  112  cd \basic_linux
+  113  cat > cmdline.txt
+  114  ls
+  115  ls-R
+  116  ls -R
+  117  cat > basiclinux
+  118  cat basiclinux
+  119  cat > basiclinux2
+  120  cat basiclinux basiclinux2 > basiclinux1
+  121  ls
+  122  rm basiclinux1
+  123  ls
+  124  mv basiclinux2/home
+  125  mv basiclinux2 /home
+  126  sudo mv basiclinux2 /home
+  127  pr
+  128  history
+(base) giko@giko-HP-Notebook:~/basic_linux$ 
+

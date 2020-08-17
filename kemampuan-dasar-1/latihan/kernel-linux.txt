@@ -1,0 +1,43 @@
+(base) giko@giko-HP-Notebook:~$ ls -lah
+total 89M
+drwxr-xr-x 18 giko giko 4,0K Agu 12 11:56 .
+drwxr-xr-x  3 root root 4,0K Agu 12 10:43 ..
+-rw-------  1 giko giko 2,6K Agu 12 09:26 .bash_history
+-rw-r--r--  1 giko giko  220 Agu 10 20:19 .bash_logout
+-rw-r--r--  1 giko giko 6,0K Agu 11 11:53 .bashrc
+drwxrwxr-x  2 giko giko 4,0K Agu 12 10:55 basic_linux
+drwxr-xr-x 14 giko giko 4,0K Agu 12 10:00 .cache
+-rw-rw-r--  1 giko giko   81 Agu 12 11:10 comment_example.sh
+drwxrwxr-x  2 giko giko 4,0K Agu 11 11:52 .conda
+drwxr-xr-x 14 giko giko 4,0K Agu 12 09:27 .config
+-rw-r--r--  1 giko giko   27 Agu 10 13:49 .dmrc
+drwxr-xr-x  2 giko giko 4,0K Agu 11 11:23 Documents
+drwxr-xr-x  2 giko giko 4,0K Agu 11 12:14 Downloads
+-rw-rw-r--  1 giko giko  138 Agu 12 11:08 echo_example.sh
+-rwxrwxr-x  1 giko giko   32 Agu 12 11:02 First.sh
+-rw-rw-r--  1 giko giko   96 Agu 12 11:48 for_example.sh
+drwx------  3 giko giko 4,0K Agu 10 13:49 .gnupg
+-rw-------  1 giko giko 2,9K Agu 12 09:59 .ICEauthority
+-rw-r--r--  1 giko giko   87 Agu 10 20:19 .inputrc
+drwx------  3 giko giko 4,0K Agu 10 13:49 .local
+drwxrwxr-x 15 giko giko 4,0K Agu 11 11:52 miniconda3
+-rw-rw-r--  1 giko giko  89M Jul 28 23:13 Miniconda3-latest-Linux-x86_64.sh
+-rw-rw-r--  1 giko giko  110 Agu 12 11:34 multiline-comment.sh
+drwxr-xr-x  2 giko giko 4,0K Agu 10 13:49 Music
+drwxr-xr-x  2 giko giko 4,0K Agu 10 13:49 Pictures
+drwx------  3 giko giko 4,0K Agu 11 12:20 .pki
+-rw-r--r--  1 giko giko  807 Agu 10 20:19 .profile
+drwxr-xr-x  2 giko giko 4,0K Agu 10 13:49 Public
+-rw-------  1 giko giko    7 Agu 11 13:26 .python_history
+-rw-rw-r--  1 giko giko   25 Agu 11 11:21 sample1
+-rw-r--r--  1 giko giko    0 Agu 11 11:15 .sudo_as_admin_successful
+drwxr-xr-x  2 giko giko 4,0K Agu 10 13:49 Templates
+-rw-rw-r--  1 giko giko   80 Agu 12 11:56 user_input.sh
+drwxr-xr-x  2 giko giko 4,0K Agu 10 13:49 Videos
+drwxrwxr-x  3 giko giko 4,0K Agu 11 12:20 .vscode
+-rw-rw-r--  1 giko giko  177 Agu 11 12:08 .wget-hsts
+-rw-rw-r--  1 giko giko  118 Agu 12 11:42 while_example.sh
+-rw-------  1 giko giko   61 Agu 12 09:59 .Xauthority
+-rw-------  1 giko giko 3,5K Agu 12 09:59 .xsession-errors
+-rw-------  1 giko giko 3,5K Agu 12 09:54 .xsession-errors.old
+

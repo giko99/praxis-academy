@@ -1,0 +1,5 @@
+parameter Grub :
+Elementary OS
+advance option for Ubuntu
+Windows
+
