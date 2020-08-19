@@ -1,0 +1,42 @@
+1. buat project dengan startproject #tulis di terminal
+python -m django startproject todolist
+python manage.py runserver localhost:8080 #tulis di vscode
+
+2. buat app dengan startapp
+python manage.py startapp task #perintah untuk membuat folder task
+python manage.py migrate
+
+3. mendaftarkan app
+python manage.py runserver localhost:8080 #masuk ke Django
+4. mengarahkan urls ke app
+buka setting.py tambahkan di list INSTALLED_APPS =[ 
+'task',
+]
+
+from django.contrib import admin
+from django.urls import path, include
+
+path('', include('task.urls')), #ubah path di urls.py (di folder todolist)
+
+
+buat folder templates/task
+buaf file index.html
+
+5. urls app me-render template (di file urls.py pada folder task)
+from django.shortcuts import render
+from django.contrib import admin
+from django.urls import path
+
+def index (req):
+    return render(req, 'task/index.html')
+
+urlpatterns = [
+    path('', index),  #tambahkan untuk merender file index
+    
+jalankan di terminal : python manage.py runserver localhost:8080
+
+latihan :
+-di template, buat form untuk input task 
+-di template, buat tampilan tabel untuk list task
+ 
+
