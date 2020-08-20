@@ -23,3 +23,4 @@ def index (req):
 urlpatterns = [
     path('', index),
 ]
+

@@ -1,5 +1,5 @@
 1. buat project dengan startproject #tulis di terminal
-python -m django startproject todolist
+python -m django startproject (nama_project)
 python manage.py runserver localhost:8080 #tulis di vscode
 
 2. buat app dengan startapp
@@ -13,10 +13,14 @@ buka setting.py tambahkan di list INSTALLED_APPS =[
 'task',
 ]
 
+#ubah path di urls.py (di folder nama_project)
 from django.contrib import admin
 from django.urls import path, include
 
-path('', include('task.urls')), #ubah path di urls.py (di folder todolist)
+urlpatterns = [
+    path('', include('task.urls')),
+    path('admin/', admin.site.urls),
+] 
 
 
 buat folder templates/task
