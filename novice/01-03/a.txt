@@ -1,0 +1,6 @@
+fungsi/function/procedure :
+-fungsi biasa 
+-dengan parameter
+-dengan return
+
+dictionary  : terdiri dari key dan value 
