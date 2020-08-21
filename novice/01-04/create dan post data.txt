@@ -1,0 +1,57 @@
+menyiapkan table di database    :
+1. membuat model
+
+class Task(models.Model):
+    name = models.TextField()
+#di file models.py
+
+2. men-generate migration
+
+python3 manage.py makemigrations
+
+3. menjalankan migrations
+
+python3 manage.py migrate
+
+mengambil data  :
+1. import model
+
+from . import models
+
+2. ambil data melalui model
+
+mengirim/membuat data:
+1. di template, buat form dengan method POST
+<form method="POST" action="" class="mt-3">
+
+#action kosong,
+dan ditambah 
+{% csrf_token %}
+
+2. di views, memeriksa apakah terjadi POST,
+
+def index(req):
+    if req.POST:
+        models.Task.objects.create(name=req.POST['name'], status=req.POST['status'])
+    
+    tasks = models.Task.objects.all()
+    return render(req, 'task/index.html',{
+        'data' :tasks,
+    })
+
+dan jika benar maka simpan data dari POST tersebut
+
+buat perintah Django di table yang akan memuat input data
+
+{% for d in data %}
+        <tr>
+            <td>{{d.id}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.status}}</td>
+            <td>
+                <button class="btn btn-sm btn-success">Detail</button>
+                <button class="btn btn-sm btn-warning">Edit</button>
+                <button class="btn btn-sm btn-danger">Hapus</button>
+            </td>
+        </tr>
+        {% endfor %}

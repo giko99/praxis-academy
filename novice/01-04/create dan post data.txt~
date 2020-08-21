@@ -1,0 +1,14 @@
+menyiapkan table di database    :
+1. membuat model
+2. men-generate migration
+3. menjalankan migrations
+
+mengambil data  :
+1. import model
+2. ambil data melalui model
+
+mengirim/membuat data:
+1. di template, buat form dengan method POST, action kosong, dan ditambah 
+{% csrf_token %}
+2. di views, memeriksa apakah terjadi POST,
+dan jika enar maka simpan data dari POST
