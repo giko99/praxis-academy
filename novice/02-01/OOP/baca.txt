@@ -1,0 +1,18 @@
+Object Oriented Programming :
+-self : akses untuk class
+-classes : dapat diistilahkan dengan blue print /gambaran abstrak
+
+di dalamnya ada properti
+properti adalah ciri-ciri atau hal-hal yang dimiliki
+
+dari kelas bisa untuk membuat object
+
+-method : kemampuan, tugas, atau aktivitas yang dapat dilakukan
+
+-inheritance :pewarisan
+
+class __init__ (self): digunakan untuk inisiasi, dijalankan otomatis jika object dibuat. 
+kegunaan :
+bisa memberi nilai properti dan membuat properti baru (menyiapkan object)
+
+#init diberi nama constructor 
