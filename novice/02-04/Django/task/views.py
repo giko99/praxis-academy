@@ -21,3 +21,13 @@ def detail(req, id):
 def delete(req, id):
     models.Task.objects.filter(pk=id).delete()
     return redirect('/')
+
+def update(req, id):
+    if req.POST:
+        task = models.Task.objects.filter(pk=id).update(name=req.POST['name'])
+        return redirect('/')
+
+    task = models.Task.objects.filter(pk=id).first()    
+    return render(req, 'task/update.html', {
+        'data': task,
+    })

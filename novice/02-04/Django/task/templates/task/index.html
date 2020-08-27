@@ -17,7 +17,7 @@
     <form method="POST" actions="" class="mt-3">
         {% csrf_token %}
 
-        Tambah task
+        <h5>Tambah task</h5>
         <input type="text" name="name" class="form-control">
         <button class="btn btn-primary mt-1">Tambah</button>
     </form>
@@ -34,7 +34,7 @@
             <td>{{d.name}}</td>
             <td>   
               <a type="button" class="btn btn-success" href="/{{d.id}}" >Detail</a>
-              <button type="button" class="btn btn-warning">Edit</button>
+              <a type="button" class="btn btn-warning" href="/{{d.id}}/update">Edit</a>
               <a type="button" class="btn btn-danger" href="/{{d.id}}/delete">Hapus</a>
             </td>
         </tr>
