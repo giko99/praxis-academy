@@ -1,0 +1,14 @@
+- judul
+- genre
+- rating
+- tanggal rilis
+- deskripsi :
+    - sutradara
+    - penulis
+    - pemeran
+    - negara
+    - bahasa
+    - tanggal rilis
+    - durasi 
+- poster film
+
