@@ -1,0 +1,39 @@
+Database Management System (DBMS) => PostgreSQL
+
+menggunakan SQL(Stucture Query Language)
+
+agenda hari ini : 
+install postgre
+belajar SQL :
+- DDL (data definition Language)
+	- CREATE
+	- ALTER 
+	- DROP
+	- ...
+- DML (data manipulation Laguage)
+	- INSERT
+	- UPDATE
+	- DELETE
+	- ...
+- DQL (Data Query Language)
+	- SELECT
+	- ...
+
+
+create database (nama_dbms)
+\l 
+\c (masuk ke nama_dbms)
+create table nama_table(id, nim varchar, nama varchar);
+\d (untuk masuk ke table)
+
+latihan:
+- buat tabel untuk database yang 
+aplikasinya dipresentasikan minggu lalu :)
+
+DBMS film :
+- id
+- judul
+- genre
+- rating
+- tanggal
+- deskripsi

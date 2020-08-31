@@ -1,0 +1,11 @@
+film=# select id, judul, genre, rating, tanggal from daftarfilm;
+ id |             judul             |      genre      | rating |      tanggal      
+----+-------------------------------+-----------------+--------+-------------------
+ 17 | Transformers                  | Action          | 7/10   | 28 Juni 2007
+ 19 | Sherlock Holmes               | Mistery/Action  | 7.7/10 | 27 Desember 2008
+ 18 | Laskar Pelangi                | Drama           | 7.8/10 | 25 September 2008
+ 15 | Dilan 1990                    | Roman/Drama     | 7.3/10 | 25 Januari 2018
+ 21 | Parasite                      | Thriller/Comedy | 8.6/10 | 21 Juni 2019
+ 25 | Dilan 1991                    | Roman/Drama     | 6.6/10 | 28 Februari 2019
+ 20 | Pengabdi Setan(Satan's Slave) | Horror/Misteri  | 6.6/10 | 26 September 2017
+(7 rows)

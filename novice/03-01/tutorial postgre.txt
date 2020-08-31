@@ -1,0 +1,19 @@
+masuk ke postgre :
+ sudo su - postgres
+ psql
+
+\l (untuk melihat list database)
+\c nama_database ( untuk masuk ke database yang dipilih)
+\d (untuk melihat tabel)
+\d nama_table(untuk melihat struktur tabel)
+
+DDL :
+create table DAFTARFILM( id int, judul varchar, genre varchar, rating varchar, tanggal varchar, deskripsi text); #untuk membuat tabel
+
+DML :
+insert =>insert into nama_tabel (id, judul, ... ) values (123, 'Sherlock Holmes', '...');
+update =>update daftarfilm set rating = '8.6/10' where id = 21;
+delete =>delete from daftarfilm where id = 25;
+
+DQL :
+select id, judul, genre, tanggal from daftarfilm;

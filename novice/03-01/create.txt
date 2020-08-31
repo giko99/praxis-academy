@@ -1,0 +1,52 @@
+postgres=# create database film;
+CREATE DATABASE
+postgres=# \l
+                                  List of databases
+   Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
+-----------+----------+----------+-------------+-------------+-----------------------
+ film      | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ postgres  | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ template0 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+           |          |          |             |             | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+           |          |          |             |             | postgres=CTc/postgres
+(4 rows)
+
+
+
+
+
+film=# create table DAFTARFILM( id int, judul varchar, genre varchar, rating varchar, tanggal varchar, deskripsi text);
+CREATE TABLE
+film=# \d
+           List of relations
+ Schema |    Name    | Type  |  Owner   
+--------+------------+-------+----------
+ public | daftarfilm | table | postgres
+(1 row)
+
+film=# \d daftarfilm
+                   Table "public.daftarfilm"
+  Column   |       Type        | Collation | Nullable | Default 
+-----------+-------------------+-----------+----------+---------
+ id        | integer           |           |          | 
+ judul     | character varying |           |          | 
+ genre     | character varying |           |          | 
+ rating    | character varying |           |          | 
+ tanggal   | character varying |           |          | 
+ deskripsi | text              |           |          | 
+
+film=# q
+film-# \l
+                                  List of databases
+   Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
+-----------+----------+----------+-------------+-------------+-----------------------
+ film      | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ postgres  | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | 
+ template0 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+           |          |          |             |             | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/postgres          +
+           |          |          |             |             | postgres=CTc/postgres
+(4 rows)
+
+film-# \d daftarfilm

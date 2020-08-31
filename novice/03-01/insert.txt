@@ -1,0 +1,2 @@
+film=# insert into daftarfilm values(20, E'Pengabdi Setan(Satan\'s Slave)', 'Horror/Misteri', '6.6/10', '26 September 2017', 'Setelah sakit aneh selama 3 tahun, Ibu akhirnya meninggal dunia. Bapak lalu memutuskan untuk kerja di luar kota meninggalkan anak-anak. Tak lama kemudian, anak-anak merasa bahwa Ibu kembali berada di rumah. Situasi semakin menyeramkan ketika mereka mengetahui bahwa Ibu datang lagi tidak sekedar untuk menjenguk, tapi untuk menjemput mereka.');
+INSERT 0 1
