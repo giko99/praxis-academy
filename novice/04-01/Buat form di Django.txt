@@ -1,0 +1,21 @@
+Django ModelForm:
+- Buat forms.py
+    - import ModelForm
+    - import model yang dibuat (model Task)
+    - definisikan model menggunakan class
+- Di views
+    - import form 
+    - buat variabel yang isinya form (yang sudah dibuat)
+    - kirim ke template
+- Di template
+    - memasang form sesuai nama yang dikirim dari views 
+    
+Form Styling:
+- install django-crispy-forms dengan perintah
+    sudo pyhton3 -m pip install django-crispy-forms
+di settings.py
+    -tambahkan 'crisp_forms' di INSTALLED_APPS
+    -tambahkan template pack, CRISPY_TEMPLATE_PACK = 'bootstrap4'
+di template
+    - load tag crispy form, {% load crispy_forms_tags %}
+    - ubah form mejadi {{form crispy}}
