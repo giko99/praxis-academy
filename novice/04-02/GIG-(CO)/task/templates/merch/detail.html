@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GIG-MERCH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="/">GIG-(CO)</a>
+    <li class="nav-item">
+      <a class="navbar-brand" href="/input">INPUT FILM</a>
+      <a class="navbar-brand" href="/game/input">INPUT GAME</a>
+      <a class="navbar-brand" href="/merch/input">INPUT MERCH</a>
+    </li>
+  </nav><br>
+  <div class="container">
+
+    <p align="right"> 
+      <a onclick="goBack()" type="button" class="btn btn-primary mt-1" href="/merch/daftarmerch">Back</a>
+      <br>
+      <table class="table table-dark ">
+        <tr>
+            <td>ID</td>
+            <td>:</td>
+            <td>{{data.id}}</td>    
+        </tr>
+        <tr>
+            <td>Item</td>
+            <td>:</td>
+            <td>{{data.nama}}</td>    
+        </tr>
+        <tr>
+            <td>Kategori</td>
+            <td>:</td>
+            <td>{{data.kategori}}</td>    
+        </tr>
+        <tr>
+            <td>Harga</td>
+            <td>:</td>
+            <td>{{data.harga}}</td>    
+        </tr>
+        <tr>
+            <td>Stock</td>
+            <td>:</td>
+            <td>{{data.stock}}</td>    
+        </tr>
+        <tr>
+            <td>Deskripsi</td>
+            <td>:</td>
+            <td>{{data.deskripsi}}</td>    
+        </tr>
+        
+      </table>
+      
+  </div>
+
+</body>
+</html>
