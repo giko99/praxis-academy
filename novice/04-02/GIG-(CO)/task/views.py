@@ -32,8 +32,7 @@ def input(req):
     form_input = forms.TaskForm()
 
     if req.POST:
-        form_input = forms.TaskForm(req.POST)
-
+        form_input = forms.TaskForm(req.POST, req.FILES)
         if form_input.is_valid():
             form_input.save()
         return redirect('/daftarfilm')
