@@ -1,6 +1,6 @@
 from django.db import models
 from multiselectfield import MultiSelectField
-
+from datetime import datetime, date
 # Create your models here.
 class Task(models.Model):
     name = models.CharField(max_length=255)
@@ -11,10 +11,11 @@ class Task(models.Model):
         ("Thriler", "Thriler"),
         ("Mistery", "Mistery"),
         ("Fiction", "Fiction"),
+        ("Fantasy", "Fantasy"),
     ]
-    genre = MultiSelectField(max_length=25, choices = genre_choice, default='1')
-    rating = models.CharField(max_length=255)
-    tanggal = models.CharField(max_length=255)
+    genre = MultiSelectField(max_length=255, choices = genre_choice, default='1')
+    rating = models.CharField(max_length=255, null=True, blank=True)
+    tanggal = models.DateField(default=datetime.now)
     upload_img = models.ImageField(default='', upload_to="images/")
     deskripsi = models.TextField(default='')
 
@@ -30,3 +31,6 @@ class Merch(models.Model):
     harga = models.CharField(max_length=255)
     stock = models.CharField(max_length=255)
     deskripsi = models.TextField(default='')
+
+    def tanggal(self):
+        return self.tanggal.strftime('%Y-%m-%d')

@@ -106,13 +106,19 @@ def delete_m(req, id):
     return redirect('/merch/daftarmerch')
 
 def update(req, id):
+    film = models.Task.objects.filter(pk=id).first() 
+    form_input = forms.TaskForm(instance=film)
+
     if req.POST:
-        task = models.Task.objects.filter(pk=id).update(name=req.POST['name'], genre=req.POST['genre'], rating=req.POST['rating'], tanggal=req.POST['tanggal'], deskripsi=req.POST['deskripsi'])
+        form_input = forms.TaskForm(req.POST, instance=film)
+        if form_input.is_valid():
+            form_input.save()
         return redirect('/daftarfilm')
 
     task = models.Task.objects.filter(pk=id).first()    
     return render(req, 'task/update.html', {
-        'data': task,
+        'data' : task,
+        'form' : form_input,
     })
 
 def update_g(req, id):
